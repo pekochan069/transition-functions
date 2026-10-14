@@ -1,0 +1,22 @@
+---
+import { ThemeToggle } from "./theme-toggle";
+---
+
+<header
+  id="site-header"
+  style={{
+    "view-transition-name": "site-header",
+  }}
+  class="sticky top-0 h-20 z-50"
+>
+  <div
+    class="flex justify-between max-w-6xl h-16 px-6 py-4 mx-auto items-center rounded-b-xl border-border w-full border md:w-[95%] transition-[height,width] duration-300 ease-spring shadow-sm motion-reduce:transition-none bg-background/95 backdrop-blur"
+  >
+    <nav>
+      <a href="/" class="text-xl font-bold"> Transition Functions </a>
+    </nav>
+    <div>
+      <ThemeToggle client:load />
+    </div>
+  </div>
+</header>

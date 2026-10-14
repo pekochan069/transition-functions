@@ -1,0 +1,19 @@
+import type { JSX } from "@solidjs/web";
+
+/** Icon from Font Awesome Solid by Dave Gandy - https://creativecommons.org/licenses/by/4.0/ */
+export function Fa7SolidEllipsis(props: JSX.IntrinsicElements["svg"]) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 640 640"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M96 320c0-30.9 25.1-56 56-56s56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56m168 0c0-30.9 25.1-56 56-56s56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56m224-56c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56"
+      />
+    </svg>
+  );
+}
