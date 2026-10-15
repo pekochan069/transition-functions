@@ -9,6 +9,11 @@ import {
 } from "#components/ui/dropdown-menu.tsx";
 import { Input } from "#components/ui/input.tsx";
 import { Label } from "#components/ui/label.tsx";
+import {
+  ProgressIndicator,
+  ProgressRoot,
+  ProgressTrack,
+} from "#components/ui/progress.tsx";
 import { Switch } from "#components/ui/switch.tsx";
 
 import { CubicBezier } from "./cubic-bezier";
@@ -34,6 +39,8 @@ export function CssTransition() {
   const [rotate2, setRotate2] = createSignal(0);
   const [rotate3, setRotate3] = createSignal(0);
   const [rotate4, setRotate4] = createSignal(0);
+
+  const [progress, setProgress] = createSignal(0);
 
   return (
     <div class="grid place-content-center gap-16">
@@ -149,6 +156,27 @@ export function CssTransition() {
             }}
           />
           <Label for="switch-example">Switch</Label>
+        </div>
+        <div class="flex w-full items-center gap-4">
+          <ProgressRoot class="w-full" value={progress()}>
+            <ProgressTrack>
+              <ProgressIndicator
+                style={{
+                  "animation-duration": `${duration()}ms`,
+                  "animation-timing-function": transitionTimingFunction(),
+                  "transition-duration": `${duration()}ms`,
+                  "transition-timing-function": transitionTimingFunction(),
+                }}
+              />
+            </ProgressTrack>
+          </ProgressRoot>
+          <Button
+            onClick={() => {
+              setProgress((prev) => (prev === 0 ? 100 : 0));
+            }}
+          >
+            Update
+          </Button>
         </div>
       </div>
     </div>
