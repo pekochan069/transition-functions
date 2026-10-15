@@ -30,7 +30,7 @@ export function ArrowRightIcon(props: JSX.IntrinsicElements["svg"]) {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path d="M5 12H19M12 19L19 12L12 5" stroke="currentColor" />
           </g>
         </g>

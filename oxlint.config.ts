@@ -12,6 +12,18 @@ export default defineConfig({
   options: { typeAware: true },
   overrides: [
     {
+      files: ["./src/components/chart/tooltip.tsx"],
+      rules: {
+        "anti-slop/no-runtime-typeof": "off",
+      },
+    },
+    {
+      files: ["./src/components/chart/*.tsx"],
+      rules: {
+        "shadcn/no-unknown-classes": "off",
+      },
+    },
+    {
       files: ["./src/components/ui/*.tsx"],
       rules: {
         "anti-slop/require-safety-comment-for-type-assertion": "off",

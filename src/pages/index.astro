@@ -4,8 +4,7 @@ import BaseLayout from "../layouts/base-layout.astro";
 ---
 
 <BaseLayout>
-  <div class="border-2 border-border">
-    <h1 class="text-base">Hello, world!</h1>
-    <CssTransition client:load />
+  <div>
+    <CssTransition client:only="solid-js" />
   </div>
 </BaseLayout>

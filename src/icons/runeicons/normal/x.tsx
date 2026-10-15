@@ -30,7 +30,7 @@ export function XIcon(props: JSX.IntrinsicElements["svg"]) {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" />
           </g>
         </g>

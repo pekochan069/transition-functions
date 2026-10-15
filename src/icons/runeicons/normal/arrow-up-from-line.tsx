@@ -24,13 +24,13 @@ export function ArrowUpFromLineIcon(props: JSX.IntrinsicElements["svg"]) {
       <g transform="translate(0.75, 0.75) scale(0.9375)">
         <g
           transform="translate(12, 12) rotate(0) scale(1, 1) translate(-12, -12)"
-          stroke="#1d1d1d"
+          stroke="currentColor"
           fill="none"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path d="M6 9L12 3L18 9M12 3V17M5 21H19" stroke="currentColor" />
           </g>
         </g>

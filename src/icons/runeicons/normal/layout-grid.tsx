@@ -30,7 +30,7 @@ export function LayoutGridIcon(props: JSX.IntrinsicElements["svg"]) {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path
               d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z"
               stroke="currentColor"

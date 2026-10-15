@@ -30,7 +30,7 @@ export function ChevronRightIcon(props: JSX.IntrinsicElements["svg"]) {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path d="M9 18L15 12L9 6" stroke="currentColor" />
           </g>
         </g>

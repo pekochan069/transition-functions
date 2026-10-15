@@ -30,7 +30,7 @@ export function MenuIcon(props: JSX.IntrinsicElements["svg"]) {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path d="M4 5H20M4 12H20M4 19H20" stroke="currentColor" />
           </g>
         </g>

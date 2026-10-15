@@ -30,7 +30,7 @@ export function CheckIcon(props: JSX.IntrinsicElements["svg"]) {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <g class="icon-anim-container icon-anim-group">
+          <g>
             <path d="M20 6L9 17L4 12" stroke="currentColor" />
           </g>
         </g>
